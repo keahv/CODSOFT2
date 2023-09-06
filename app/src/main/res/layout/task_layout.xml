@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="false"
+    android:layout_marginHorizontal="16dp"
+    android:layout_marginVertical="8dp"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="5dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp">
+
+        <TextView
+            android:id="@+id/txtpriorities"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="8dp"
+            android:text="Medium" />
+
+        <com.google.android.material.checkbox.MaterialCheckBox
+            android:id="@+id/mcheckbox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtpriorities"
+            android:layout_toStartOf="@id/imageView"
+            android:buttonTint="@color/drakColor"
+            android:paddingStart="8dp"
+            android:text="This is Task 1" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="false"
+            app:srcCompat="@drawable/baseline_delete" />
+
+<!--        <EditText-->
+<!--            android:id="@+id/txtDue"-->
+<!--            android:layout_width="100dp"-->
+<!--            android:layout_height="30dp"-->
+<!--            android:ems="10"-->
+<!--            android:inputType="date"-->
+<!--            android:layout_below="@id/mcheckbox"-->
+<!--            android:layout_alignParentEnd="true"-->
+<!--            android:textSize="12sp"-->
+<!--            android:padding="3dp"-->
+<!--            android:textStyle="bold"-->
+<!--            />-->
+
+        <TextView
+            android:id="@+id/txtDue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/mcheckbox"
+            android:layout_alignParentEnd="true"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+
+
+    </RelativeLayout>
+
+
+</androidx.cardview.widget.CardView>
